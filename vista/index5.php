@@ -87,7 +87,7 @@ echo "	                    	</div>  ";
 						$rows2 = $Obj->obtenerMejorNota2();
 						while( $fila2 = $rows2->fetch_row()){
 
-echo "								<div class=\"form-row\">\n"; //Sebas estuvo aqui. XD
+echo "								<div class=\"form-row\">\n"; //Sebas estuvo aqui. XD XD XD
 echo "	                    		<label for=\"\">\n";
 echo "	                    		Primera nota del Grupo : ".$fila2[0];
 echo "	                    		</label>\n";
