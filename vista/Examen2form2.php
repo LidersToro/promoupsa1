@@ -61,133 +61,46 @@ session_start();
             		<h3>Carrera de Ingenieria Informática y/o de Sistemas</h3>
 					<h3>Nombre del Grupo : <?php echo $_SESSION['grupo'];?> </h3>
             	</div>
-            	<div id="wizard">
+				<div id="wizard">
             		<!-- SECTION 1 -->
 	                <h4></h4>
 	                <section>
-	                    <div class="form-row" style="margin-bottom: 26px;">
-	                    	<label for="">
-	                    		1-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp1"  class="form-control">
-	                    			<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label >
-	                    		2-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp2"  class="form-control">
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		3-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp3"  class="form-control">
-								<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		4-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp4"  class="form-control">
-	                    			<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		5-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp5" class="form-control">
-	                    	</div>
-	                    </div>		
+					<h3 class="padre">Descifrar el Siguiente mensaje</h3>
+					<img src="/../promoupsa1/images/printext.png" >
+					<img src="/../promoupsa1/images/sectext.png" >
+					<label for="">
+	                    		Escribir el codigo con todo hasta con las comas:
+	                </label>
+	                <input type="text" class="form-control">
+	                    
+					
 	                </section>
-	                
 					<!-- SECTION 2 -->
+					
 	                <h4></h4>
 	                <section>
-	                    <div class="form-row">
+					    <h3 class="padre">Realizar el Sudoku</h3>
+					<div class="padre">
+	                   <div style="width: 450px;">
+						 <iframe name="sudokuWindow2" src="https://onlinesudoku.es/sudokulib/generate.php?size=medium" width="250" height="320" frameBorder="0" scrolling="no">
+						 </iframe>
+						  <div style="text-align: right; width: 240px;">
+						   <a href="https://onlinesudoku.es/" style="color: #6a6a6a;" title="Sudoku Online - El juego del Sudoku">Online<strong>Sudoku</strong><span>.es</span></a>
+						  </div>
+						</div>
+						</div>
+						
 	                    	<label for="">
-	                    		6-¿Cuánto es 1+1?
+	                    		tiene que darle a "Haz el control" en la parte superior para verificar su respuesta para verificar su respuesta, si todos los cuadros estan en blanco usted debe de poner en esta opcion 
+								si, caso contrario si no llego a completar el sudoku tiene que poner no.
 	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp6" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		7-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
+	                    
 	                    		<select name="resp7" class="form-control">
 									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
+									<option value="a" class="option">Si</option>
+									<option value="b" class="option">No</option>
 								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		8-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp8" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 3.4vh">
-	                    	<label for="">
-	                    		9-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp9" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 50px;">
-	                    	<label for="">
-	                    		10-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<div class="checkbox-circle">
-									<label class="male">
-										<input type="radio" name="gender" value="1" checked>1<br>
-										<span class="checkmark"></span>
-									</label>
-									<label class="female">
-										<input type="radio" name="gender" value="2">2<br>
-										<span class="checkmark"></span>
-									</label>
-									<label>
-										<input type="radio" name="gender" value="3">3<br>
-										<span class="checkmark"></span>
-									</label>
-								</div>
-	                    	</div>
-	                    </div>		
+	                   
 	                </section>
 
 	                <!-- SECTION 3 -->
