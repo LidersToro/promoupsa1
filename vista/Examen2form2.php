@@ -65,7 +65,7 @@ session_start();
             		<!-- SECTION 1 -->
 	                <h4></h4>
 	                <section>
-					<h3 class="padre">Descifrar el Siguiente mensaje</h3>
+					<h3 class="padre">Descifrar el Siguiente Mensaje</h3>
 					<img src="/../promoupsa1/images/printext.png" >
 					<img src="/../promoupsa1/images/sectext.png" >
 
