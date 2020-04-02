@@ -68,6 +68,7 @@ session_start();
 					<h3 class="padre">Descifrar el Siguiente mensaje</h3>
 					<img src="/../promoupsa1/images/printext.png" >
 					<img src="/../promoupsa1/images/sectext.png" >
+
 					<label for="">
 	                    		Escribir el codigo con todo hasta con las comas:
 	                </label>
