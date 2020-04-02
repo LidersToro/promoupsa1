@@ -72,7 +72,7 @@
 
 echo "								<div class=\"form-row\">\n";
 echo "	                    		<label for=\"\">\n";
-echo "	                    		Primera nota del Grupo : ".$fila1[0];
+echo "	                    		Grupo : ".$fila1[0];
 echo "	                    		</label>\n";
 echo "	                    		<div class=\"form-holder\">\n";
 echo								$fila1[1];
@@ -89,7 +89,7 @@ echo "	                    	</div>  ";
 
 echo "								<div class=\"form-row\">\n"; //Sebas estuvo aqui. XD XD XD ya pues loco ni que fuera perro para decir guau guau Me jodiste con esa viejo
 echo "	                    		<label for=\"\">\n";
-echo "	                    		Primera nota del Grupo : ".$fila2[0];
+echo "	                    		Grupo : ".$fila2[0];
 echo "	                    		</label>\n";
 echo "	                    		<div class=\"form-holder\">\n";
 echo								$fila2[1];
@@ -109,7 +109,7 @@ echo "	                    	</div>  ";
 
 echo "								<div class=\"form-row\">\n";
 echo "	                    		<label for=\"\">\n";
-echo "	                    		Primera nota del Grupo : ".$fila3[0];
+echo "	                    		Grupo : ".$fila3[0];
 echo "	                    		</label>\n";
 echo "	                    		<div class=\"form-holder\">\n";
 echo								$fila3[1];
@@ -129,7 +129,7 @@ echo "	                    	</div>  ";
 
 echo "								<div class=\"form-row\">\n";
 echo "	                    		<label for=\"\">\n";
-echo "	                    		Primera nota del Grupo : ".$fila4[0];
+echo "	                    		Grupo : ".$fila4[0];
 echo "	                    		</label>\n";
 echo "	                    		<div class=\"form-holder\">\n";
 echo								$fila4[1];
