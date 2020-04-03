@@ -86,7 +86,7 @@ session_start();
 						 <iframe name="sudokuWindow2" src="https://onlinesudoku.es/sudokulib/generate.php?size=medium" width="250" height="320" frameBorder="0" scrolling="no">
 						 </iframe>
 						  <div style="text-align: right; width: 240px;">
-						   <a href="https://onlinesudoku.es/" style="color: #6a6a6a;" title="Sudoku Online - El juego del Sudoku">Online<strong>Sudoku</strong><span>.es</span></a>
+						   <a href="https://onlinesudoku.es/" style="color: #FFBF00;" title="Sudoku Online - El juego del Sudoku">Online<strong>Sudoku</strong><span>.es</span></a>
 						  </div>
 						</div>
 						</div>
