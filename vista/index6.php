@@ -67,7 +67,7 @@
 						<h3 align="center">Promedios</h3>
 						<div class="form-holder">
 							Ingrese la cantidad de mejores promedios que quiere ver: <br><br>
-	                    		<input type="text" name="cant" class="form-control">
+	                    		<input type="number" name="cant" class="form-control">
 	                    	</div>
 						<div class="padre"> <button class="button button4 " name="btn_prom">Ver Promedios</button> </div>
 						<div class="padre"> <button class="button button4 " name="btn_salir">Salir</button> </div>
