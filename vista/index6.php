@@ -81,7 +81,7 @@
 						require_once __DIR__.'/../modelo/Examen1Modelo.php';
 						$Obj = new Examen1Modelo();
 						$rows1 = $Obj->obtenerTopPromedio($_POST['cant']);
-						while( $fila1 = $rows1->fetch_row()){
+						while( $fila1 = $rows1->fetch_row()){ //almacena los datos de grupo y promedio de la cantidad que ponga el usuario.
 
 echo "								<div class=\"form-row\">\n";
 echo "	                    		<label for=\"\">\n";

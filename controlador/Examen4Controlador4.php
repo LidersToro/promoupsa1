@@ -16,7 +16,7 @@ if(isset($_POST['btn_mostrar']))
 if(isset($_POST['btn_promedio']))
 {
 
-    $rows1 = $ObjEx1->obtenerNota($_SESSION['grupo']);
+    $rows1 = $ObjEx1->obtenerPromedio($_SESSION['grupo']);
     mostrar1($rows1);
 }
 
