@@ -1,8 +1,7 @@
 <?php
 
+
  header("location: /../promoupsa1/vista/index1.php");
-
-
 
 
 

@@ -95,6 +95,7 @@ if(isset($_POST['btn_enviar']))
 					$Obj->setExamen1($nota);
 					$aux = $Obj->getExamen1();
 					$Obj->modificarExamen1($aux,$_SESSION['grupo']);
+					
 
 
 
@@ -151,7 +152,7 @@ if(isset($_POST['btn_enviar']))
 			echo "            <form action=\"Examen1Controlador1.php\" method=\"POST\">\n";
 			echo "              <div class=\"form-header\">\n";
 			echo "                  <a href=\"#\">#Promo UPSA cuestionario online</a>\n";
-			echo "                  <h3>Carrera de Ingenieria Informática y/o de Sistemas</h3>\n";
+			echo "                  <h3>Carrera de Ingenieria Electronica</h3>\n";
 			echo "                  <h3>Nombre del Grupo : ".$_SESSION['grupo']."</h3>\n";
 			echo "              </div>\n";
 			echo "              <div id=\"wizard\">\n";
@@ -160,6 +161,7 @@ if(isset($_POST['btn_enviar']))
 			echo "                  <h1>$nota</h1>\n";
 			echo "                  <br>\n";
 			echo "                  <button class=\"button button4\" name=\"btn_mostrar\">Ver Notas</button>";
+			echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
 			echo "                  </div>\n";
 			echo "              </div>\n";
 			echo "            </form>\n";

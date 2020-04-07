@@ -27,6 +27,11 @@
 		header("location: /../promoupsa1/vista/index5.php");
 	
 	}
+			if($_POST['promo'] =='f')
+	{
+		header("location: /../promoupsa1/vista/index6.php");
+	
+	}
 
 
 

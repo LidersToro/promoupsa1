@@ -13,9 +13,10 @@ class Examen1Modelo{
     private $examen2;
     private $examen3;
     private $examen4;
+    private $promedio;
 
 
-    public function __construct($gru="",$e1="",$e2="",$e3="",$e4="")
+    public function __construct($gru="",$e1="",$e2="",$e3="",$e4="",$prom="")
     {
         $this->idGrupo = 0;
         $this->grupo    = $gru;
@@ -23,6 +24,7 @@ class Examen1Modelo{
         $this->examen2  = $e2;
         $this->examen3     = $e3;
         $this->examen4      = $e4;
+        $this->promedio = $prom;
     }
     public function __destruct()
     {
@@ -52,6 +54,10 @@ class Examen1Modelo{
     {
         $this->examen4 = $e4;
     }
+    public function setPromedio($prom)
+    {
+        $this->promedio = $prom;
+    }
 
 
     public function getIdGrupo()
@@ -77,6 +83,10 @@ class Examen1Modelo{
     public function getExamen4()
     {
       return $this->examen4;
+    }
+    public function getPromedio()
+    {
+      return $this->promedio;
     }
 
     public function adicionarNombre()
@@ -150,51 +160,33 @@ class Examen1Modelo{
         return($rows);
     }
 
-    public function estadistica()
+        public function obtenerPromedio($grupo)
     {
-        $sql="SELECT count(edad),AVG(edad) from cliente where edad <15;";
+        $sql = "SELECT grupo, sum(examen1+examen2+examen3+examen4)/4 as promedio from examen where grupo = '$grupo';";
         $conexion = Conectar::conectarBD();
         $rows = $conexion->query($sql);
         $conexion->close();
         return($rows);
     }
-    public function estadistica1()
+        public function obtenerTodosPromedio()
     {
-        $sql="SELECT count(edad),AVG(edad) from cliente where edad <45 and edad>15;";
+        $sql = "SELECT grupo, sum(examen1+examen2+examen3+examen4)/4 as promedio from examen;";
         $conexion = Conectar::conectarBD();
         $rows = $conexion->query($sql);
         $conexion->close();
         return($rows);
     }
-    public function estadistica2()
+    	public function obtenerTopPromedio($cantidad)
     {
-        $sql="SELECT count(edad),AVG(edad) from cliente where edad < 45;";
+        $sql = "SELECT grupo,promedio FROM examen ORDER BY promedio DESC LIMIT $cantidad;";
         $conexion = Conectar::conectarBD();
         $rows = $conexion->query($sql);
         $conexion->close();
         return($rows);
     }
 
-    public function adicionar()
-    {
-        $conexion = Conectar::conectarBD();
-        if($conexion !=false)
-        {
-            $sql = "INSERT INTO examen1(nombre, respuesta1, respuesta2, respuesta3, respuesta4, respuesta5, nota) VALUES(?,?,?,?,?,?,?);";
-            $stmt = $conexion->prepare($sql);
-            $stmt->bind_param('ssssssi', $this->nombre, $this->respuesta1, $this->respuesta2, $this->respuesta3, $this->respuesta4, $this->respuesta5, $this->nota);
-            if($stmt->execute())
-            {
-                return(true);
 
-            }
-            else
-            {
-                return(false);
-            }
-            $conexion->close();
-        }
-    }
+
     public function modificarExamen1($examen1 , $grupo)
     {
         $conexion = Conectar::conectarBD();//nos conectamos a la base de datos
@@ -292,53 +284,29 @@ class Examen1Modelo{
         }
 
     }
-    public function obtenerCliente($id=0)
+        public function modificarPromedio($promedio ,$grupo)
     {
-        $sql = "SELECT * FROM cliente WHERE idCliente=$id;";
-        $conexion = Conectar::conectarBD();
-        $rows = $conexion->query($sql);
-        $conexion->close();
-        return($rows);
-    }
-    public function borrarCliente($id=0)
-    {
-        $sql = "DELETE FROM cliente WHERE idcliente=?;";
-        $conexion = Conectar::conectarBD();
-        $stmt = $conexion->prepare($sql);
-        $stmt->bind_param('s',$id);
-        if($stmt->execute())
+        $conexion = Conectar::conectarBD();//nos conectamos a la base de datos
+        if($conexion != false)
         {
-            $conexion->close();
-            return 1;
-        }
-        else
-        {
-            $conexion->close();
-            return -1;
-        }
-    }
-    public function obtComboCliente()
-    {
-        $sql = "SELECT * FROM cliente;";
-        $conexion = Conectar::conectarBD();
-        $result = $conexion->query($sql);
-        if($result->num_rows>0)
-        {
-            $combobit= "";
-            while($row = $result->fetch_array(MYSQLI_ASSOC))
+            $sql = "UPDATE examen SET promedio = $promedio  WHERE grupo= '$grupo';";
+            echo $sql;
+            $stmt=$conexion->prepare($sql);
+            $stmt->bind_param('is',$promedio ,$grupo);
+            if($stmt->execute())
             {
-            $combobit .= "<option value='". $row['idCliente'] . "'>" . $row['idCliente'] . " " . $row['nombre'] . " " . $row['edad'] . "</option>";
+                $conexion->close();
+                return (true);
+
             }
+            else
+            {
+                $conexion->close();
+                return (false);
+            }
+
         }
-        else
-        {
-            echo "No hubo resultados";
-        }
-        $conexion->close();
-        return($combobit);
 
-
-
-
-}
+    }
+    
 }

@@ -1,17 +1,14 @@
 <?php
-
 $user=$_POST['user'];
 $contra = $_POST['clave'];
 if($user =='lider' && $contra == '1234' || $user =='sebas' && $contra == '1234' || $user =='cecilia' && $contra == '1234' ){
 	 header("location: /../promoupsa1/vista/mainn2.html");
-   // require_once __DIR__ . "/../vista/mainn2.html" ;
+    //require_once __DIR__ . "/../vista/mainn2.html" ;
 	}else{
-	//require_once __DIR__ . "/../vista/mainn.html" ;
-    header("location: /../promoupsa1");
-
+    
+    //require_once __DIR__ . "/../vista/mainn.html" ;
+    header("location: /../promoupsa1");  
 	}
-
-
 
 
    /*

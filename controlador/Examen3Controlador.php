@@ -148,10 +148,10 @@ if(isset($_POST['btn_enviar']))
 			echo "          <div class=\"image-holder\">\n";
 			echo "              <img src=\"images/logo.png\" alt=\"\">\n";
 			echo "          </div>\n";
-			echo "            <form action=\"Examen1Controlador1.php\" method=\"POST\">\n";
+			echo "            <form action=\"Examen3Controlador3.php\" method=\"POST\">\n";
 			echo "              <div class=\"form-header\">\n";
 			echo "                  <a href=\"#\">#Promo UPSA cuestionario online</a>\n";
-			echo "                  <h3>Carrera de Ingenieria Informática y/o de Sistemas</h3>\n";
+			echo "                  <h3>Carrera de Ingenieria Civil</h3>\n";
 			echo "                  <h3>Nombre del Grupo : ".$_SESSION['grupo']."</h3>\n";
 			echo "              </div>\n";
 			echo "              <div id=\"wizard\">\n";
@@ -160,6 +160,7 @@ if(isset($_POST['btn_enviar']))
 			echo "                  <h1>$nota</h1>\n";
 			echo "                  <br>\n";
 			echo "                  <button class=\"button button4\" name=\"btn_mostrar\">Ver Notas</button>";
+			echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
 			echo "                  </div>\n";
 			echo "              </div>\n";
 			echo "            </form>\n";
