@@ -160,7 +160,7 @@ echo "                  <h3>Nombre del Grupo : ".$_SESSION['grupo']."</h3>\n";
 echo "              </div>\n";
 echo "              <div id=\"wizard\">\n";
 echo "                  <div class=\"p\">\n";
-echo "                  <h1>Promedio : ".$fila1[1]." </h1>\n";
+echo "                  <h1>Promedio : ".$fila1[1]." </h1>\n"; //muestra el promedio
 //echo "                  <h1>Nota del Examen de Ingenieria civil : ".$fila[3]." </h1>\n";
 //echo "                  <h1>Nota del Examen de Ingenieria Petrolera : ".$fila[4]." </h1>\n";
 //echo "                  <h1>Nota del Examen de Ingenieria Electronica : ".$fila[5]." </h1>\n";
