@@ -70,7 +70,7 @@ session_start();
 					<img src="/../promoupsa1/images/sectext.png" >
 
 					<label for="">
-	                    		Escribir el codigo con todo hasta con las comas:
+	                    		Escribir el codigo con todo hasta con las comas y en mayusculas:
 	                </label>
 	                <input type="text" class="form-control">
 	                    

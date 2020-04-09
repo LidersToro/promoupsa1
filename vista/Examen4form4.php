@@ -56,6 +56,7 @@ session_start();
 				<img src="images/logo.png" alt="">
 			</div>
             <form action="../controlador/Examen4Controlador.php" method="POST">
+			
             	<div class="form-header">
             		<a href="#">#Promo UPSA cuestionario online</a>
             		<h3>Carrera de Ingenieria Industrial y de Sistema </h3>
@@ -65,66 +66,64 @@ session_start();
             		<!-- SECTION 1 -->
 	                <h4></h4>
 	                <section>
+					<div class="padre">Ordena los elementos característicos de cada revolución industrial con la tecnología característica de ellas.</div>
 	                    <div class="form-row" style="margin-bottom: 26px;">
-	                    	<label for="">
-	                    		1-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp1"  class="form-control">
-	                    			<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
 	                    	<label >
-	                    		2-¿Cuánto es 1+1?
+	                    		Electricidad <select name="indu1" class="form-control">
+									<option value="" selected disabled>Selecione uno</option>
+									<option value="a" class="option">a</option>
+									<option value="b" class="option">b</option>
+									<option value="c" class="option">c</option>
+									<option value="d" class="option">d</option>
+								</select><br>
+	                    		<img src="/../promoupsa1/images/indu1.png" >
 	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp2"  class="form-control">
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
+							<label >
+	                    	Vapor  <select name="indu1" class="form-control">
+									<option value="" selected disabled>Selecione uno/option>
+									<option value="a" class="option">a</option>
+									<option value="b" class="option">b</option>
+									<option value="c" class="option">c</option>
+									<option value="d" class="option">d</option>
+								</select><br>
+	                    		<img src="/../promoupsa1/images/indu2.png" >
+							</label>
+							<div class="form-holder">
+	                    		A)	Industria 1.0 <br><br>
+								B)	Industria 2.0 <br><br>
+								
 	                    	</div>
+	                    	
 	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		3-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp3"  class="form-control">
-								<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
+						<div class="form-row" style="margin-bottom: 26px;">
+	                    	<label >
+	                    	Electronica  <select name="indu1" class="form-control">
+									<option value="" selected disabled>Selecione uno</option>
+									<option value="a" class="option">a</option>
+									<option value="b" class="option">b</option>
+									<option value="c" class="option">c</option>
+									<option value="d" class="option">d</option>
+								</select><br>
+	                    		<img src="/../promoupsa1/images/indu3.png" >
+								</label>
+								<label >
+	                    	Internet  <select name="indu1" class="form-control">
+									<option value="" selected disabled>Selecione uno</option>
+									<option value="a" class="option">a</option>
+									<option value="b" class="option">b</option>
+									<option value="c" class="option">c</option>
+									<option value="d" class="option">d</option>
+								</select><br>
+	                    		<img src="/../promoupsa1/images/indu4.png" >
+								</label>
+							<div class="form-holder">
+	                    		C)	Industria 3.0 <br><br>
+								D)	Industria 4.0 <br><br>
+								
+	                    	</div>	
 	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		4-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp4"  class="form-control">
-	                    			<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		5-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp5" class="form-control">
-	                    	</div>
-	                    </div>		
+		
+	                    
 	                </section>
 	                
 					<!-- SECTION 2 -->
