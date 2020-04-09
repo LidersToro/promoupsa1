@@ -2,11 +2,9 @@
  
 session_start();
 require_once __DIR__.'/../modelo/Examen1Modelo.php';
-//require_once __DIR__.'/../modelo/Examen2Modelo.php';
-//require_once __DIR__.'/../modelo/Examen3Modelo.php';
+
 $ObjEx1 = new Examen1Modelo();
-//$ObjEx1 = new Examen2Modelo();
-//$ObjEx1 = new Examen3Modelo();
+
 if(isset($_POST['btn_mostrar']))
 {
 
@@ -77,7 +75,7 @@ echo "          </div>\n";
 echo "            <form action=\"inicioControlador4.php\">\n";
 echo "              <div class=\"form-header\">\n";
 echo "                  <a href=\"#\">#Promo UPSA cuestionario online</a>\n";
-echo "                  <h3>Carrera de Ingenieria Informática y/o de Sistemas</h3>\n";
+echo "                  <h3>Carrera de Ingenieria Industrial y de Sistemas</h3>\n";
 echo "                  <h3>Nombre del Grupo : ".$_SESSION['grupo']."</h3>\n";
 echo "              </div>\n";
 echo "              <div id=\"wizard\">\n";

@@ -193,7 +193,7 @@ class Examen1Modelo{
         if($conexion != false)
         {
             $sql = "UPDATE examen SET examen1 = $examen1  WHERE grupo= '$grupo';";
-            echo $sql;
+          
             $stmt=$conexion->prepare($sql);
             $stmt->bind_param('is',$examen1 ,$grupo);
             if($stmt->execute())
@@ -218,7 +218,7 @@ class Examen1Modelo{
         if($conexion != false)
         {
             $sql = "UPDATE examen SET examen2 = $examen2  WHERE grupo= '$grupo';";
-            echo $sql;
+            
             $stmt=$conexion->prepare($sql);
             $stmt->bind_param('is',$examen2 ,$grupo);
             if($stmt->execute())
@@ -242,7 +242,7 @@ class Examen1Modelo{
         if($conexion != false)
         {
             $sql = "UPDATE examen SET examen3 = $examen3  WHERE grupo= '$grupo';";
-            echo $sql;
+           
             $stmt=$conexion->prepare($sql);
             $stmt->bind_param('is',$examen3 ,$grupo);
             if($stmt->execute())
@@ -266,7 +266,7 @@ class Examen1Modelo{
         if($conexion != false)
         {
             $sql = "UPDATE examen SET examen4 = $examen4  WHERE grupo= '$grupo';";
-            echo $sql;
+           
             $stmt=$conexion->prepare($sql);
             $stmt->bind_param('is',$examen4 ,$grupo);
             if($stmt->execute())
@@ -290,7 +290,7 @@ class Examen1Modelo{
         if($conexion != false)
         {
             $sql = "UPDATE examen SET promedio = $promedio  WHERE grupo= '$grupo';";
-            echo $sql;
+            
             $stmt=$conexion->prepare($sql);
             $stmt->bind_param('is',$promedio ,$grupo);
             if($stmt->execute())

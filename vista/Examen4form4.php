@@ -56,7 +56,7 @@ session_start();
 				<img src="images/logo.png" alt="">
 			</div>
             <form action="../controlador/Examen4Controlador.php" method="POST">
-			
+			<br><br><br><br><br><br><br>
             	<div class="form-header">
             		<a href="#">#Promo UPSA cuestionario online</a>
             		<h3>Carrera de Ingenieria Industrial y de Sistema </h3>
@@ -69,7 +69,7 @@ session_start();
 					<div class="padre">Ordena los elementos característicos de cada revolución industrial con la tecnología característica de ellas.</div>
 	                    <div class="form-row" style="margin-bottom: 26px;">
 	                    	<label >
-	                    		Electricidad <select name="indu1" class="form-control">
+	                    		Electricidad <select name="resp1" class="form-control">
 									<option value="" selected disabled>Selecione uno</option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
@@ -79,14 +79,14 @@ session_start();
 	                    		<img src="/../promoupsa1/images/indu1.png" >
 	                    	</label>
 							<label >
-	                    	Vapor  <select name="indu1" class="form-control">
+	                    	Electronica  <select name="resp2" class="form-control">
 									<option value="" selected disabled>Selecione uno/option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
 									<option value="c" class="option">c</option>
 									<option value="d" class="option">d</option>
 								</select><br>
-	                    		<img src="/../promoupsa1/images/indu2.png" >
+	                    		<img src="/../promoupsa1/images/indu3.png" >
 							</label>
 							<div class="form-holder">
 	                    		A)	Industria 1.0 <br><br>
@@ -97,17 +97,17 @@ session_start();
 	                    </div>	
 						<div class="form-row" style="margin-bottom: 26px;">
 	                    	<label >
-	                    	Electronica  <select name="indu1" class="form-control">
+	                    	Vapor  <select name="resp3" class="form-control">
 									<option value="" selected disabled>Selecione uno</option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
 									<option value="c" class="option">c</option>
 									<option value="d" class="option">d</option>
 								</select><br>
-	                    		<img src="/../promoupsa1/images/indu3.png" >
+	                    		<img src="/../promoupsa1/images/indu2.png" >
 								</label>
 								<label >
-	                    	Internet  <select name="indu1" class="form-control">
+	                    	Internet  <select name="resp4" class="form-control">
 									<option value="" selected disabled>Selecione uno</option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
@@ -129,112 +129,56 @@ session_start();
 					<!-- SECTION 2 -->
 	                <h4></h4>
 	                <section>
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		6-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp6" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		7-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="resp7" class="form-control">
+	                    <div class="padre">El siguiente gráfico de barras representa la distribución de la resistencia de piezas de madera producidas en un una carpintería industrial. El cliente ha establecido que la resistencia de cada pieza debe estar entre 15- 20 libras por cm2.  ¿Qué se puede decir respecto a la capacidad el proceso de cumplir o no con las especificaciones dadas por el cliente?</div>
+					<br>
+					<img src="/../promoupsa1/images/indu5.png" ><br><br>
+					
+					
+					<label>
+	                ¿ La carpintería sería capaz de cumplir con las especificaciones?  
+					</label>
+					<br><br>
+									<select name="resp5" class="form-control">
 									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">2</option>
-									<option value="b" class="option">1</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		8-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp8" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 3.4vh">
-	                    	<label for="">
-	                    		9-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" name="resp9" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 50px;">
-	                    	<label for="">
-	                    		10-¿Cuánto es 1+1?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<div class="checkbox-circle">
-									<label class="male">
-										<input type="radio" name="gender" value="1" checked>1<br>
-										<span class="checkmark"></span>
-									</label>
-									<label class="female">
-										<input type="radio" name="gender" value="2">2<br>
-										<span class="checkmark"></span>
-									</label>
-									<label>
-										<input type="radio" name="gender" value="3">3<br>
-										<span class="checkmark"></span>
-									</label>
-								</div>
-	                    	</div>
-	                    </div>		
+									<option value="a" class="option">si</option>
+									<option value="b" class="option">no</option>
+									</select><br><br>
+				
+					  ¿Cuál parece ser la resistencia promedio de las piezas? 
+					</label>
+					<br><br>
+									<select name="resp6" class="form-control">
+									<option value="" selected disabled>Seleciona uno opcion</option>
+									<option value="a" class="option">16 a 16.5 lbs por cm2</option>
+									<option value="b" class="option">19.5 a 20.0 lbs por cm2</option>
+									<option value="c" class="option">18 a 18.5 lbs por cm2</option>
+									</select>
 	                </section>
 
 	                <!-- SECTION 3 -->
 	                <h4></h4>
 	                <section>
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Course ID:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. abc 12345 or abc 1234L">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Course Title:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. Intro to physic">
-	                    	</div>
-	                    </div>	
-                     	<div class="form-row">
-	                    	<label for="">
-	                    		Section(s):
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. 3679 or 33fa, 4295">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 38px">
-	                    	<label for="">
-	                    		Select Teacher:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-	                    			<option value="frances meyer" class="option">Frances Meyer</option>
-									<option value="johan lucas" class="option">Johan Lucas</option>
-									<option value="merry linn" class="option">Merry Linn</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="checkbox-circle" style="margin-bottom: 48px;">
-							<label>
-								<input type="checkbox" checked>I agree all statement in Terms & Conditions
-								<span class="checkmark"></span>
-							</label>
-						</div>
+	                            <div > Una empresa zapatera encontró en su última auditoría las siguientes quejas: <br>
+								a) No se atendió a una queja de un cliente   <br>
+								b) Se demoró mucho la entrega<br>
+								Selecciona los aspectos que pudieron causar estas no conformidades (quejas)<br>
+								1.  Falta de Supervisión <br>
+								2.  Evaluación de proveedores<br>
+								3.  Falta de Enfoque al cliente<br>
+								4. Falta de procedimientos  <br>
+								5. Capacidad de entrega<br>
+							</div>
+					<label>
+	                Selecione uno 
+					</label>
+					<br><br>
+									<select name="resp7" class="form-control" >
+									<option value="" selected disabled>Seleciona uno opcion</option>
+									<option value="a" class="option">1, 2, 3</option>
+									<option value="b" class="option">1, 4, 6</option>
+									<option value="c" class="option">1, 3, 4</option>
+									<option value="d" class="option">3, 5, 6</option>
+									</select>
 						<div class="padre">
 						<p class="p p2">Si el boton no le da, fata llenar algun dato en el formulario. </p>
 						<button class="button button4" name="btn_enviar">Finalizar Cuestionario</button>
