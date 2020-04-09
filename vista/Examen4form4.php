@@ -69,7 +69,7 @@ session_start();
 					<div class="padre">Ordena los elementos característicos de cada revolución industrial con la tecnología característica de ellas.</div>
 	                    <div class="form-row" style="margin-bottom: 26px;">
 	                    	<label >
-	                    		Electricidad <select name="resp1" class="form-control">
+	                    		Electricidad <select name="resp1" class="form-control" required>
 									<option value="" selected disabled>Selecione uno</option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
@@ -79,7 +79,7 @@ session_start();
 	                    		<img src="/../promoupsa1/images/indu1.png" >
 	                    	</label>
 							<label >
-	                    	Electronica  <select name="resp2" class="form-control">
+	                    	Electronica  <select name="resp2" class="form-control" required>
 									<option value="" selected disabled>Selecione uno/option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
@@ -97,7 +97,7 @@ session_start();
 	                    </div>	
 						<div class="form-row" style="margin-bottom: 26px;">
 	                    	<label >
-	                    	Vapor  <select name="resp3" class="form-control">
+	                    	Vapor  <select name="resp3" class="form-control" required>
 									<option value="" selected disabled>Selecione uno</option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
@@ -107,7 +107,7 @@ session_start();
 	                    		<img src="/../promoupsa1/images/indu2.png" >
 								</label>
 								<label >
-	                    	Internet  <select name="resp4" class="form-control">
+	                    	Internet  <select name="resp4" class="form-control" required>
 									<option value="" selected disabled>Selecione uno</option>
 									<option value="a" class="option">a</option>
 									<option value="b" class="option">b</option>
@@ -138,7 +138,7 @@ session_start();
 	                ¿ La carpintería sería capaz de cumplir con las especificaciones?  
 					</label>
 					<br><br>
-									<select name="resp5" class="form-control">
+									<select name="resp5" class="form-control" required>
 									<option value="" selected disabled>Seleciona uno opcion</option>
 									<option value="a" class="option">si</option>
 									<option value="b" class="option">no</option>
@@ -147,7 +147,7 @@ session_start();
 					  ¿Cuál parece ser la resistencia promedio de las piezas? 
 					</label>
 					<br><br>
-									<select name="resp6" class="form-control">
+									<select name="resp6" class="form-control" required>
 									<option value="" selected disabled>Seleciona uno opcion</option>
 									<option value="a" class="option">16 a 16.5 lbs por cm2</option>
 									<option value="b" class="option">19.5 a 20.0 lbs por cm2</option>
@@ -172,7 +172,7 @@ session_start();
 	                Selecione uno 
 					</label>
 					<br><br>
-									<select name="resp7" class="form-control" >
+									<select name="resp7" class="form-control" required>
 									<option value="" selected disabled>Seleciona uno opcion</option>
 									<option value="a" class="option">1, 2, 3</option>
 									<option value="b" class="option">1, 4, 6</option>
