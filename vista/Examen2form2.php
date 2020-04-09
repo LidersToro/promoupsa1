@@ -72,7 +72,7 @@ session_start();
 					<label for="">
 	                    		Escribir el codigo con todo hasta con las comas y en mayusculas:
 	                </label>
-	                <input type="text" class="form-control">
+	                <input type="text"  name ="t1" class="form-control">
 	                    
 					
 	                </section>

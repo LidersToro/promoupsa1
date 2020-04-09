@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once __DIR__.'/../modelo/Examen1Modelo.php';
-$respuesta1       = $_POST['resp1'];
+$respuesta1       = $_POST['t1'];
 $respuesta2  = $_POST['resp2'];
 $respuesta3     = $_POST['resp3'];
 $respuesta4      = $_POST['resp4'];
@@ -18,9 +18,9 @@ if(isset($_POST['btn_enviar']))
 {
 				 $nota = 0;
 					echo "<br>Se adiciono exitosamente!";
-					if($respuesta1 == 'a')
+					if($respuesta1 == 'La UPSA es la mejor universidad, por eso tienes que inscribirte aquí, promoupsa 2020 la mejor del mundo.')
 					{
-					  $nota = $nota + 10;
+					  $nota = $nota + 70; // 70 si escribe la respuesta correcta
 					//  $ObjEx1->setRespuesta1($respuesta1);
 					}else {
 					  //$ObjEx1->setRespuesta1($respuesta1);
