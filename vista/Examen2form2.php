@@ -14,6 +14,85 @@ session_start();
 
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript">
+            function verificar() {
+                var select = document.getElementById('resp7');
+                var t2 = document.getElementById('cell-2');
+                var t5 = document.getElementById('cell-5');
+                var t7 = document.getElementById('cell-7');
+                var t9 = document.getElementById('cell-9');
+                var t10 = document.getElementById('cell-10');
+                var t11 = document.getElementById('cell-11');
+                var t12 = document.getElementById('cell-12');
+                var t13 = document.getElementById('cell-13');
+                var t15 = document.getElementById('cell-15');
+                var t16 = document.getElementById('cell-16');
+                var t17 = document.getElementById('cell-17');
+                var t18 = document.getElementById('cell-18');
+                var t19 = document.getElementById('cell-19');
+                var t20 = document.getElementById('cell-20');
+                var t21 = document.getElementById('cell-21');
+                var t22 = document.getElementById('cell-22');
+                var t24 = document.getElementById('cell-24');
+                var t29 = document.getElementById('cell-29');
+                var t30 = document.getElementById('cell-30');
+                var t31 = document.getElementById('cell-31');
+                var t32 = document.getElementById('cell-32');
+                var t34 = document.getElementById('cell-34');
+                var t36 = document.getElementById('cell-36');
+                var t37 = document.getElementById('cell-37');
+                var t39 = document.getElementById('cell-39');
+                var t40 = document.getElementById('cell-40');
+                var t41 = document.getElementById('cell-41');
+                var t43 = document.getElementById('cell-43');
+                var t44 = document.getElementById('cell-44');
+                var t46 = document.getElementById('cell-46');
+                var t48 = document.getElementById('cell-48');
+                var t49 = document.getElementById('cell-49');
+                var t50 = document.getElementById('cell-50');
+                var t51 = document.getElementById('cell-51');
+                var t56 = document.getElementById('cell-56');
+                var t58 = document.getElementById('cell-58');
+                var t59 = document.getElementById('cell-59');
+                var t60 = document.getElementById('cell-60');
+                var t61 = document.getElementById('cell-61');
+                var t62 = document.getElementById('cell-62');
+                var t63 = document.getElementById('cell-63');
+                var t64 = document.getElementById('cell-64');
+                var t65 = document.getElementById('cell-65');
+                var t67 = document.getElementById('cell-67');
+                var t68 = document.getElementById('cell-68');
+                var t69 = document.getElementById('cell-69');
+                var t70 = document.getElementById('cell-70');
+                var t71 = document.getElementById('cell-71');
+                var t73 = document.getElementById('cell-73');
+                var t75 = document.getElementById('cell-75');
+                var t78 = document.getElementById('cell-78');
+                if (t2 == '7' && t5 == '8' && t7 == '4' && t9 == '4' && t10 == '9' && t11 == '3' && t12 == '6' && t13 == '7' && t15 == '5' && t16 == '1' && t17 == '8' && t18 == '5' && t19 == '8' && t20 == '2' && t21 == '4' && t22 == '9' && t24 == '3' && t29 == '8' && t30 == '9' && t31 == '5' && t32 == '6' && t34 == '2' && t36 == '2' && t37 == '7' && t39 == '3' && t40 == '1' && t41 == '4' && t43 == '5' && t44 == '6' && t46 == '5' && t48 == '8' && t49 == '2' && t50 == '7' && t51 == '1' && t56 == '6' && t58 == '4' && t59 == '3' && t60 == '9' && t61 == '7' && t62 == '5' && t63 == '7' && t64 == '4' && t65 == '5' && t67 == '8' && t68 == '9' && t69 == '6' && t70 == '3' && t71 == '1' && t73 == '3' && t75 == '7' && t78 == '4') {
+                    select.value = "1";
+                    const value = select.value;
+                    let option = select.querySelector(`option[value="1"]`);
+                    option.disabled = true;
+                }
+                else {
+                    select.value = "0";
+                        const value = select.value;
+                    let option = select.querySelector(`option[value="0"]`);
+                    option.disabled = true;
+                }
+            
+           // select.value="a";
+			//const value = select.value;
+			//let option = select.querySelector(`option[value="b"]`);
+			//option.disabled = true;
+			//imagen.src = "/../promoupsa1/images/video1.gif";
+            //imagenn.src = "";
+            
+
+            }
+            </script>
+
+
 		<style>
 .button {
   background-color: #FFBF00; /* Green */
@@ -83,24 +162,223 @@ session_start();
 					    <h3 class="padre">Realizar el Sudoku</h3>
 					<div class="padre">
 	                   <div style="width: 450px;">
-						 <iframe name="sudokuWindow2" src="https://onlinesudoku.es/sudokulib/generate.php?size=medium" width="250" height="320" frameBorder="0" scrolling="no">
-						 </iframe>
+
 						  <div style="text-align: right; width: 240px;">
-						   <a href="https://onlinesudoku.es/" style="color: #FFBF00;" title="Sudoku Online - El juego del Sudoku">Online<strong>Sudoku</strong><span>.es</span></a>
+						  <style type="text/css">
+							  table {
+        border: 2px solid #000000;
+      }
+
+      td {
+        border: 1px solid #000000;
+        text-align: center;
+        vertical-align: middle;
+      }
+
+      input {
+        color: #000000;
+        padding: 0;
+        border: 0;
+        text-align: center;
+        width: 48px;
+        height: 48px;
+        font-size: 24px;
+        background-color: #FFFFFF;
+        outline: none;
+      }
+
+      input:disabled {
+        background-color: #EEEEEE;
+      }
+
+      #cell-0,  #cell-1,  #cell-2  { border-top:    2px solid #000000; }
+      #cell-2,  #cell-11, #cell-20 { border-right:  2px solid #000000; }
+      #cell-18, #cell-19, #cell-20 { border-bottom: 2px solid #000000; }
+      #cell-0,  #cell-9,  #cell-18 { border-left:   2px solid #000000; }
+
+      #cell-3,  #cell-4,  #cell-5  { border-top:    2px solid #000000; }
+      #cell-5,  #cell-14, #cell-23 { border-right:  2px solid #000000; }
+      #cell-21, #cell-22, #cell-23 { border-bottom: 2px solid #000000; }
+      #cell-3,  #cell-12, #cell-21 { border-left:   2px solid #000000; }
+
+      #cell-6,  #cell-7,  #cell-8  { border-top:    2px solid #000000; }
+      #cell-8,  #cell-17, #cell-26 { border-right:  2px solid #000000; }
+      #cell-24, #cell-25, #cell-26 { border-bottom: 2px solid #000000; }
+      #cell-6,  #cell-15, #cell-24 { border-left:   2px solid #000000; }
+
+      #cell-27, #cell-28, #cell-29 { border-top:    2px solid #000000; }
+      #cell-29, #cell-38, #cell-47 { border-right:  2px solid #000000; }
+      #cell-45, #cell-46, #cell-47 { border-bottom: 2px solid #000000; }
+      #cell-27, #cell-36, #cell-45 { border-left:   2px solid #000000; }
+
+      #cell-30, #cell-31, #cell-32 { border-top:    2px solid #000000; }
+      #cell-32, #cell-41, #cell-50 { border-right:  2px solid #000000; }
+      #cell-48, #cell-49, #cell-50 { border-bottom: 2px solid #000000; }
+      #cell-30, #cell-39, #cell-48 { border-left:   2px solid #000000; }
+
+      #cell-33, #cell-34, #cell-35 { border-top:    2px solid #000000; }
+      #cell-35, #cell-44, #cell-53 { border-right:  2px solid #000000; }
+      #cell-51, #cell-52, #cell-53 { border-bottom: 2px solid #000000; }
+      #cell-33, #cell-42, #cell-51 { border-left:   2px solid #000000; }
+
+      #cell-54, #cell-55, #cell-56 { border-top:    2px solid #000000; }
+      #cell-56, #cell-65, #cell-74 { border-right:  2px solid #000000; }
+      #cell-72, #cell-73, #cell-74 { border-bottom: 2px solid #000000; }
+      #cell-54, #cell-63, #cell-72 { border-left:   2px solid #000000; }
+
+      #cell-57, #cell-58, #cell-59 { border-top:    2px solid #000000; }
+      #cell-59, #cell-68, #cell-77 { border-right:  2px solid #000000; }
+      #cell-75, #cell-76, #cell-77 { border-bottom: 2px solid #000000; }
+      #cell-57, #cell-66, #cell-75 { border-left:   2px solid #000000; }
+
+      #cell-60, #cell-61, #cell-62 { border-top:    2px solid #000000; }
+      #cell-62, #cell-71, #cell-80 { border-right:  2px solid #000000; }
+      #cell-78, #cell-79, #cell-80 { border-bottom: 2px solid #000000; }
+      #cell-60, #cell-69, #cell-78 { border-left:   2px solid #000000; }
+
+    </style>
+							    <div class="container">
+<center><table id="grid"></center>
+
+        <tr>
+          <td><input id="cell-0" name="cell-0" type="text" value="1" disabled></td>
+          <td><input id="cell-1" name="cell-1" type="text" value="6" disabled></td>
+          <td><input id="cell-2" name="cell-2" type="text"></td>
+
+          <td><input id="cell-3" name="cell-3" type="text" value="5" disabled></td>
+          <td><input id="cell-4" name="cell-4" type="text" value="3" disabled></td>
+          <td><input id="cell-5" name="cell-5" type="text"></td>
+
+          <td><input id="cell-6" name="cell-6" type="text" value="2" disabled></td>
+          <td><input id="cell-7" name="cell-7" type="text"></td>
+          <td><input id="cell-8" name="cell-8" type="text" value="9" disabled></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-9" name="cell-9" type="text"></td>
+          <td><input id="cell-10" name="cell-10" type="text"></td>
+          <td><input id="cell-11" name="cell-11" type="text"></td>
+
+          <td><input id="cell-12" name="cell-12" type="text"></td>
+          <td><input id="cell-13" name="cell-13" type="text"></td>
+          <td><input id="cell-14" name="cell-14" type="text" value="2" disabled></td>
+
+          <td><input id="cell-15" name="cell-15" type="text"></td>
+          <td><input id="cell-16" name="cell-16" type="text"></td>
+          <td><input id="cell-17" name="cell-17" type="text"></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-18" name="cell-18" type="text"></td>
+          <td><input id="cell-19" name="cell-19" type="text"></td>
+          <td><input id="cell-20" name="cell-20" type="text"></td>
+
+          <td><input id="cell-21" name="cell-21" type="text"></td>
+          <td><input id="cell-22" name="cell-22" type="text"></td>
+          <td><input id="cell-23" name="cell-23" type="text" value="1" disabled></td>
+
+          <td><input id="cell-24" name="cell-24" type="text"></td>
+          <td><input id="cell-25" name="cell-25" type="text" value="6" disabled></td>
+          <td><input id="cell-26" name="cell-26" type="text" value="7" disabled></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-27" name="cell-27" type="text" value="3" disabled></td>
+          <td><input id="cell-28" name="cell-28" type="text" value="1" disabled></td>
+          <td><input id="cell-29" name="cell-29" type="text"></td>
+
+          <td><input id="cell-30" name="cell-30" type="text"></td>
+          <td><input id="cell-31" name="cell-31" type="text"></td>
+          <td><input id="cell-32" name="cell-32" type="text"></td>
+
+          <td><input id="cell-33" name="cell-33" type="text" value="7" disabled></td>
+          <td><input id="cell-34" name="cell-34" type="text"></td>
+          <td><input id="cell-35" name="cell-35" type="text" value="4" disabled></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-36" name="cell-36" type="text"></td>
+          <td><input id="cell-37" name="cell-37" type="text"></td>
+          <td><input id="cell-38" name="cell-38" type="text" value="9" disabled></td>
+
+          <td><input id="cell-39" name="cell-39" type="text"></td>
+          <td><input id="cell-40" name="cell-40" type="text"></td>
+          <td><input id="cell-41" name="cell-41" type="text"></td>
+
+          <td><input id="cell-42" name="cell-42" type="text" value="8" disabled></td>
+          <td><input id="cell-43" name="cell-43" type="text"></td>
+          <td><input id="cell-44" name="cell-44" type="text"></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-45" name="cell-45" type="text" value="6" disabled></td>
+          <td><input id="cell-46" name="cell-46" type="text"></td>
+          <td><input id="cell-47" name="cell-47" type="text" value="4" disabled></td>
+
+          <td><input id="cell-48" name="cell-48" type="text"></td>
+          <td><input id="cell-49" name="cell-49" type="text"></td>
+          <td><input id="cell-50" name="cell-50" type="text"></td>
+
+          <td><input id="cell-51" name="cell-51" type="text"></td>
+          <td><input id="cell-52" name="cell-52" type="text" value="9" disabled></td>
+          <td><input id="cell-53" name="cell-53" type="text" value="3" disabled></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-54" name="cell-54" type="text" value="8" disabled></td>
+          <td><input id="cell-55" name="cell-55" type="text" value="2" disabled></td>
+          <td><input id="cell-56" name="cell-56" type="text"></td>
+
+          <td><input id="cell-57" name="cell-57" type="text" value="1" disabled></td>
+          <td><input id="cell-58" name="cell-58" type="text"></td>
+          <td><input id="cell-59" name="cell-59" type="text"></td>
+
+          <td><input id="cell-60" name="cell-60" type="text"></td>
+          <td><input id="cell-61" name="cell-61" type="text"></td>
+          <td><input id="cell-62" name="cell-62" type="text"></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-63" name="cell-63" type="text"></td>
+          <td><input id="cell-64" name="cell-64" type="text"></td>
+          <td><input id="cell-65" name="cell-65" type="text"></td>
+
+          <td><input id="cell-66" name="cell-66" type="text" value="2" disabled></td>
+          <td><input id="cell-67" name="cell-67" type="text"></td>
+          <td><input id="cell-68" name="cell-68" type="text"></td>
+
+          <td><input id="cell-69" name="cell-69" type="text"></td>
+          <td><input id="cell-70" name="cell-70" type="text"></td>
+          <td><input id="cell-71" name="cell-71" type="text"></td>
+        </tr>
+
+        <tr>
+          <td><input id="cell-72" name="cell-72" type="text" value="9" disabled></td>
+          <td><input id="cell-73" name="cell-73" type="text"></td>
+          <td><input id="cell-74" name="cell-74" type="text" value="1" disabled></td>
+
+          <td><input id="cell-75" name="cell-75" type="text"></td>
+          <td><input id="cell-76" name="cell-76" type="text" value="6" disabled></td>
+          <td><input id="cell-77" name="cell-77" type="text" value="5" disabled></td>
+
+          <td><input id="cell-78" name="cell-78" type="text"></td>
+          <td><input id="cell-79" name="cell-79" type="text" value="8" disabled></td>
+          <td><input id="cell-80" name="cell-80" type="text" value="2" disabled></td>
+        </tr>
+
+      </table>
+
+    </div>
 						  </div>
 						</div>
 						</div>
 						
 	                    	<label for="">
-	                    		tiene que darle a "Haz el control" en la parte superior para verificar su respuesta para verificar su respuesta, si todos los cuadros estan en blanco usted debe de poner en esta opcion 
-								si, caso contrario si no llego a completar el sudoku tiene que poner no.
+	                    	
 	                    	</label>
-	                    
-	                    		<select name="resp7" class="form-control">
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">Si</option>
-									<option value="b" class="option">No</option>
-								</select>
+                        
+                 
+                   
 	                   
 	                </section>
 

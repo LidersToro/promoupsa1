@@ -81,9 +81,9 @@ session_start();
 					</label>
 					<br><br>
 					Solo colocar el número, sin su unidad de medida.<br>
-	                a)<input type="number" name="a" class="form-control">	
-					b)<input type="number" name="b" class="form-control">	
-					c)<input type="number" name="c" class="form-control">	
+	                a)<input type="text" name="a1" class="form-control">	
+					b)<input type="text" name="b1" class="form-control">	
+					c)<input type="text" name="c1" class="form-control">	
 	                </section>
 	                
 					<!-- SECTION 2 -->

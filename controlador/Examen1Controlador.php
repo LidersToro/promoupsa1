@@ -12,12 +12,36 @@ $respuesta8      = $_POST['resp8'];
 $respuesta9      = $_POST['resp9'];
 $respuesta10      = $_POST['gender'];
 
+
+
 $Obj = new Examen1Modelo();
 
 if(isset($_POST['btn_enviar']))
 {
 				 $nota = 0;
 					echo "<br>Se adiciono exitosamente!";
+					
+					if($_POST['a1'] == '37.5')
+					{
+					$nota = $nota + 15;
+					}
+					else
+					{
+					}
+					if($_POST['b1'] == '5.8')
+					{
+					$nota = $nota + 15;
+					}
+					else
+					{
+					}
+					if($_POST['c1'] == '1276')
+					{
+					$nota = $nota + 15;
+					}
+					else
+					{
+					}
 					if($respuesta1 == 'a')
 					{
 					  $nota = $nota + 10;
@@ -161,7 +185,7 @@ if(isset($_POST['btn_enviar']))
 			echo "                  <h1>$nota</h1>\n";
 			echo "                  <br>\n";
 			echo "                  <button class=\"button button4\" name=\"btn_mostrar\">Ver Notas</button>";
-			echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
+			//echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
 			echo "                  </div>\n";
 			echo "              </div>\n";
 			echo "            </form>\n";

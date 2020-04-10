@@ -62,9 +62,9 @@ if(isset($_POST['btn_enviar']))
 					}else {
 				//      $ObjEx1->setRespuesta5($respuesta5);
 					}
-					if($respuesta7 == 'a')
+					   if($_POST['cell-2']=='7'&&$_POST['cell-5']=='8'&&$_POST['cell-7']=='4'&&$_POST['cell-9']=='4'&&$_POST['cell-10']=='9'&&$_POST['cell-11']=='3'&&$_POST['cell-12']=='6'&&$_POST['cell-13']=='7'&&$_POST['cell-15']=='5'&&$_POST['cell-16']=='1'&&$_POST['cell-17']=='8'&&$_POST['cell-18']=='5'&&$_POST['cell-19']=='8'&&$_POST['cell-20']=='2'&&$_POST['cell-21']=='4'&&$_POST['cell-22']=='9'&&$_POST['cell-24']=='3'&&$_POST['cell-29']=='8'&&$_POST['cell-30']=='9'&&$_POST['cell-31']=='5'&&$_POST['cell-32']=='6'&&$_POST['cell-34']=='2'&&$_POST['cell-36']=='2'&&$_POST['cell-37']=='7'&&$_POST['cell-39']=='3'&&$_POST['cell-40']=='1'&&$_POST['cell-41']=='4'&&$_POST['cell-43']=='5'&&$_POST['cell-44']=='6'&&$_POST['cell-46']=='5'&&$_POST['cell-48']=='8'&&$_POST['cell-49']=='2'&&$_POST['cell-50']=='7'&&$_POST['cell-51']=='1'&&$_POST['cell-56']=='6'&&$_POST['cell-58']=='4'&&$_POST['cell-59']=='3'&&$_POST['cell-60']=='9'&&$_POST['cell-61']=='7'&&$_POST['cell-62']=='5'&&$_POST['cell-63']=='7'&&$_POST['cell-64']=='4'&&$_POST['cell-65']=='5'&&$_POST['cell-67']=='8'&&$_POST['cell-68']=='9'&&$_POST['cell-69']=='6'&&$_POST['cell-70']=='3'&&$_POST['cell-71']=='1'&&$_POST['cell-73']=='3'&&$_POST['cell-75']=='7'&&$_POST['cell-78']=='4')
 					{
-					  $nota = $nota + 10;
+					  $nota = $nota + 45;
 				  //    $ObjEx1->setRespuesta5($respuesta5);
 					}else {
 				//      $ObjEx1->setRespuesta5($respuesta5);
@@ -160,7 +160,7 @@ if(isset($_POST['btn_enviar']))
 			echo "                  <h1>$nota</h1>\n";
 			echo "                  <br>\n";
 			echo "                  <button class=\"button button4\" name=\"btn_mostrar\">Ver Notas</button>";
-			echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
+			//echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
 			echo "                  </div>\n";
 			echo "              </div>\n";
 			echo "            </form>\n";

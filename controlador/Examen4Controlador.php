@@ -115,7 +115,7 @@ if(isset($_POST['btn_enviar']))
 			echo "                  <h1>$nota</h1>\n";
 			echo "                  <br>\n";
 			echo "                  <button class=\"button button4\" name=\"btn_mostrar\">Ver Notas</button>";
-			echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
+			//echo "                  <button class=\"button button4\" name=\"btn_promedio\">Ver Promedio</button>";
 			echo "                  </div>\n";
 			echo "              </div>\n";
 			echo "            </form>\n";
