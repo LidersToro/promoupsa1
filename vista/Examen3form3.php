@@ -116,7 +116,7 @@ $a="";
 					<select name="resp1" id="resp1" class="form-control" Required>	
 					<option value="a" class="option">A</option>
 					<option value="b" class="option">B</option>	
-					</select>
+					</select> 
 					
 					
 	                </section>
