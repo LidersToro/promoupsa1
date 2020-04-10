@@ -5,90 +5,31 @@ $respuesta1       = $_POST['resp1'];
 $respuesta2  = $_POST['resp2'];
 $respuesta3     = $_POST['resp3'];
 $respuesta4      = $_POST['resp4'];
-$respuesta5      = $_POST['resp5'];
-$respuesta6     = $_POST['resp6'];
-$respuesta7      = $_POST['resp7'];
-$respuesta8      = $_POST['resp8'];
-$respuesta9      = $_POST['resp9'];
-$respuesta10      = $_POST['gender'];
 
 $Obj = new Examen1Modelo();
 
 if(isset($_POST['btn_enviar']))
 {
 				 $nota = 0;
-					echo "<br>Se adiciono exitosamente!";
+					
+					
+					
+					
 					if($respuesta1 == 'a')
 					{
-					  $nota = $nota + 10;
-					//  $ObjEx1->setRespuesta1($respuesta1);
-					}else {
-					  //$ObjEx1->setRespuesta1($respuesta1);
+					  $nota = $nota + 25;
 					}
-					if($respuesta2 == 'a')
+					if($respuesta2 == 7)
 					{
-					  $nota = $nota + 10;
-					//  $ObjEx1->setRespuesta2($respuesta2);
+					  $nota = $nota + 25;
 					}
-					else {
-					//  $ObjEx1->setRespuesta2($respuesta2);
-					}
-					if($respuesta3 == 'a')
+					if($respuesta3 == 5)
 					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta3($respuesta3);
+					  $nota = $nota + 25;
 					}
-					else {
-				  //    $ObjEx1->setRespuesta3($respuesta3);
-					}
-					if($respuesta4 == 'a')
+					if($respuesta4 == '1.57')
 					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta4($respuesta4);
-					}else {
-				  //    $ObjEx1->setRespuesta4($respuesta4);
-					}
-					if($respuesta5 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta6 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta7 == 'a')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta8 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta9 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta10 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
+					  $nota = $nota + 25;
 					}
        
 

@@ -1,5 +1,6 @@
 <?php
 session_start();
+$a="";
 ?>
 <!DOCTYPE html>
 <html>
@@ -11,9 +12,47 @@ session_start();
 
 		<!-- MATERIAL DESIGN ICONIC FONT -->
 		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+		
+		
+		<script type="text/javascript">
+		
+		function cambiar() {
+		  
+			var imagen = document.getElementById('imagen1');
+			var select = document.getElementById('resp1');
+			var imagenn = document.getElementById('imagen2');
+			
+			select.value="a";
+			const value = select.value;
+			let option = select.querySelector(`option[value="b"]`);
+			option.disabled = true;
+			imagen.src = "/../promoupsa1/images/video1.gif";
+			imagenn.src = "";
+			
+			
+
+			}
+			function cambiar1() {
+			
+			var imagen = document.getElementById('imagen1');
+			var select = document.getElementById('resp1');
+			var imagenn = document.getElementById('imagen2');
+			select.value="b";
+			const value = select.value;
+			let option = select.querySelector(`option[value="a"]`);
+			option.disabled = true;
+			imagen.src = "";
+			imagenn.src = "/../promoupsa1/images/video2.gif";
+			
+			$a=2;
+			}
+		</script>
+
+
 
 		<!-- STYLE CSS -->
 		<link rel="stylesheet" href="css/style.css">
+
 		<style>
 .button {
   background-color: #FFBF00; /* Green */
@@ -49,6 +88,7 @@ session_start();
 .p2 {border-radius: 50%;}
 
 </style>
+
 	</head>
 	<body>
 		<div class="wrapper">
@@ -67,23 +107,19 @@ session_start();
 	                <h4></h4>
 	                <section>
 	                     <h3 class="padre">Cuál de los siguientes puentes tiene mejor Resistencia</h3>
-						 a)<br>
-					<img src="/../promoupsa1/images/corecto.jpeg" >
-						b)<br>
-					<img src="/../promoupsa1/images/mal.jpeg" >
+						 Haga click en la imagen que crea que es más resistente<br><br>
+					<img src="/../promoupsa1/images/corecto.jpeg" onclick="cambiar();" id="imagen1" >
+						<br><br><br>
+					<img src="/../promoupsa1/images/mal.jpeg"  onclick="cambiar1();" id="imagen2" >
 
+
+					<select name="resp1" id="resp1" class="form-control" Required>	
+					<option value="a" class="option">A</option>
+					<option value="b" class="option">B</option>	
+					</select>
 					
-					<label>
-	                Selecione uno 
-					</label>
-					<br><br>
-									<select name="resp7" class="form-control">
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">a</option>
-									<option value="b" class="option">b</option>
-									</select>
+					
 	                </section>
-	                
 					<!-- SECTION 2 -->
 	                <h4></h4>
 					<section>
@@ -92,8 +128,8 @@ session_start();
 					Sea y: # de manzanas de Hugo<br>
 							<br><br>
 					Solo colocar el número.<br>
-	                x)<input type="number" name="a" class="form-control">	
-					y)<input type="number" name="b" class="form-control">	
+	                x)<input type="number" name="resp2" class="form-control" Required>	
+					y)<input type="number" name="resp3" class="form-control" Required>	
 	                
 	                    
 	                </section>
@@ -108,8 +144,8 @@ session_start();
 					<img src="/../promoupsa1/images/civil4.png" >
 					</div>
 					<br><br>
-					Colocar el tiempo.<br>
-	                <input type="number" name="a" class="form-control">	
+					Colocar el tiempo en segundos, usar solo dos decimales y utilizar el punto decimal.<br>
+	                <input type="text" name="resp4" class="form-control" Required>	
 					<br><br>
 	                
 						<div class="padre">
@@ -123,6 +159,7 @@ session_start();
             </form>
 
 		</div>
+		
 
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<!-- JQUERY STEP -->
