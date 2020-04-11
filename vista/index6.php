@@ -67,7 +67,7 @@
 						<h3 align="center">Promedios</h3>
 						<div class="form-holder">
 							Ingrese la cantidad de mejores promedios que quiere ver: <br><br>
-	                    		<input type="number" name="cant" class="form-control">
+	                    		<input type="number" name="cant" max-length="3" placeholder="" pattern="[123456789]" class="form-control" required>
 	                    	</div>
 						<div class="padre"> <button class="button button4 " name="btn_prom">Ver Promedios</button> </div>
 						<div class="padre"> <button class="button button4 " name="btn_salir">Salir</button> </div>
@@ -76,7 +76,7 @@
 						<?php
 						if(isset($_POST['btn_prom']))
 						{
-						if($_POST['cant']!=""){
+						
 						
 						require_once __DIR__.'/../modelo/Examen1Modelo.php';
 						$Obj = new Examen1Modelo();
@@ -92,9 +92,7 @@ echo "								Promedio: ".$fila1[1];
 echo "	                    		</div>\n";
 echo "	                    	</div>  ";
 							}
-							}else
-							{ header("location: /../promoupsa1/vista/index6.php");}
-							}
+						}
 							if(isset($_POST['btn_salir']))
 							{
 							header("location: /promoupsa1/vista/mainn2.html");
