@@ -74,13 +74,13 @@ session_start();
 					<label>
 	                Con sus valores:
 					R1=3Ω &nbsp;&nbsp;R2=2Ω &nbsp;&nbsp;R3=4Ω &nbsp;&nbsp;R4=3Ω &nbsp;&nbsp;R5=4Ω &nbsp;&nbsp;R6=8Ω &nbsp;&nbsp;R7=1Ω &nbsp;&nbsp;R8=6Ω &nbsp;&nbsp;R9=10Ω &nbsp;&nbsp;R10=3Ω &nbsp;&nbsp;R11=7Ω &nbsp;&nbsp;R12=8Ω &nbsp;&nbsp;y &nbsp;&nbsp;V=220v  <br>
-					<br>
+					
 					a) Calcular la resistencia total<br>
 					b) Encontrar la intensidad de corriente<br>
 					c) Encontrar la potencia 
 					</label>
-					<br><br>
-					Solo colocar el número, sin su unidad de medida.<br>
+					<br>
+					<b>Solo colocar el número, sin su unidad de medida.<br></b>
 	                a)<input type="text" name="a1" class="form-control">	
 					b)<input type="text" name="b1" class="form-control">	
 					c)<input type="text" name="c1" class="form-control">	
@@ -92,58 +92,31 @@ session_start();
 					   <h3 class="padre">Crear la función y la tabla de verdad</h3>
 					<img src="/../promoupsa1/images/pregun2elec.png" >
 	              
-					Solo colocar el número, sin su unidad de medida.<br>
-	                Escribir la función <input type="number" name="a" class="form-control">	
-					Escribir la tabla de verdad<<input type="number" name="b" class="form-control">	
-					
+					<br>
+	                <b>Cual es la función?</b><br> 					
+					<select name="resp9" id="resp9" class="form-control" Required>	
+					<option value="a" class="option">F(A,B,C)= A+B'+C+[(A*B*C)'+(A+B+C)']</option>
+					<option value="b" class="option">F(A,B,C)= A'+B'+C'+[(A*B*C)'*(A'+B+C')']</option> <!--Esta es la respuesta correcta-->
+					<option value="c" class="option">F(A,B,C)= A'+B'+C'+[(A+B+C)'+(A'+B+C')]</option>
+					</select>  <br><br>
+					<img src="/../promoupsa1/images/elec1.png" >
+					<br>
+					<b>Cual es la función?</b>
+						<br>
+						<select name="resp10" id="resp10" class="form-control" Required>	
+					<option value="a" class="option">F(A,B,C)= A+B'+C+[(A+B+C)+(A*B*C)]</option>
+					<option value="b" class="option">F(A,B,C)= (A'+B')*(B+C')</option> 
+					<option value="c" class="option">F(A,B,C)= (A+B)*(B'+C)</option> <!--Esta es la respuesta correcta-->
+					</select> 
 	                </Section>
 
 	                <!-- SECTION 3 -->
 	                <h4></h4>
 	                <section>
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Course ID:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. abc 12345 or abc 1234L">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Course Title:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. Intro to physic">
-	                    	</div>
-	                    </div>	
-                     	<div class="form-row">
-	                    	<label for="">
-	                    		Section(s):
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. 3679 or 33fa, 4295">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 38px">
-	                    	<label for="">
-	                    		Select Teacher:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-	                    			<option value="frances meyer" class="option">Frances Meyer</option>
-									<option value="johan lucas" class="option">Johan Lucas</option>
-									<option value="merry linn" class="option">Merry Linn</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="checkbox-circle" style="margin-bottom: 48px;">
-							<label>
-								<input type="checkbox" checked>I agree all statement in Terms & Conditions
-								<span class="checkmark"></span>
-							</label>
-						</div>
+						<h3 class="padre">Cual es la tabla para la siguiente funcion: <br>F(A,B,C)= (A+B')*C</h3>
+	                    <input type="radio" name="tverdad" checked="checked" value="a"/> <img src="/../promoupsa1/images/elec2.png" width="250" height="250"> <br>
+						
+						<br><input type="radio" name="tverdad" value="b"/> <img src="/../promoupsa1/images/elec3.png" width="250" height="250" >
 						<div class="padre">
 						<p class="p p2">Si el boton no le da, fata llenar algun dato en el formulario. </p>
 						<button class="button button4" name="btn_enviar">Finalizar Cuestionario</button>

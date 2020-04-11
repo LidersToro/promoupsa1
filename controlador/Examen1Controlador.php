@@ -23,24 +23,36 @@ if(isset($_POST['btn_enviar']))
 					
 					if($_POST['a1'] == '37.5')
 					{
-					$nota = $nota + 15;
+					$nota = $nota + 20;
 					}
 					else
 					{
 					}
 					if($_POST['b1'] == '5.8')
 					{
-					$nota = $nota + 15;
+					$nota = $nota + 20;
 					}
 					else
 					{
 					}
 					if($_POST['c1'] == '1276')
 					{
-					$nota = $nota + 15;
+					$nota = $nota + 20;
 					}
 					else
 					{
+					}
+					if($_POST['resp9']=='b')
+					{
+					$nota= $nota + 15;
+					}
+					if($_POST['resp10']=='c')
+					{
+					$nota= $nota + 15;
+					}
+					if($_POST['tverdad']=='a')
+					{
+					$nota = $nota + 10;
 					}
 					if($respuesta1 == 'a')
 					{

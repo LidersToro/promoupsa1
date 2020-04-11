@@ -151,8 +151,8 @@ session_start();
 					<label for="">
 	                    		Escribir el codigo con todo hasta con las comas y en mayusculas:
 	                </label>
-	                <input type="text"  name ="t1" class="form-control">
-	                    
+	            
+	                    <input type="text" name ="t1" class="form-control" onkeyup="this.value = this.value.toUpperCase(); ">
 					
 	                </section>
 					<!-- SECTION 2 -->
@@ -237,7 +237,7 @@ session_start();
       #cell-60, #cell-69, #cell-78 { border-left:   2px solid #000000; }
 
     </style>
-							    <div class="container">
+ <div class="container">
 <center><table id="grid"></center>
 
         <tr>
