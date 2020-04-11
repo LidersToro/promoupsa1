@@ -152,7 +152,7 @@ session_start();
 	                    		Escribir el codigo con todo hasta con las comas y espacios:
 	                </label>
 	            
-	                    <input type="text" name ="t1" class="form-control" onkeyup="this.value = this.value.toUpperCase(); "required>
+	                    <input type="text" name ="t1" class="form-control" onkeyup="this.value = this.value.toUpperCase(); " required>
 					
 	                </section>
 					<!-- SECTION 2 -->
