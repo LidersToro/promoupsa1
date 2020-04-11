@@ -113,7 +113,7 @@ session_start();
 	                <!-- SECTION 3 -->
 	                <h4></h4>
 	                <section>
-						<h3 class="padre">Cual es la tabla para la siguiente funcion: <br>F(A,B,C)= (A+B')*C</h3>
+						<h3 class="padre">Cual es la tabla de verdad para la siguiente funcion: <br>F(A,B,C)= (A+B')*C</h3>
 	                    <input type="radio" name="tverdad" checked="checked" value="a"/> <img src="/../promoupsa1/images/elec2.png" width="250" height="250"> <br>
 						
 						<br><input type="radio" name="tverdad" value="b"/> <img src="/../promoupsa1/images/elec3.png" width="250" height="250" >
