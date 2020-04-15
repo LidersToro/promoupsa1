@@ -20,84 +20,36 @@ if(isset($_POST['btn_enviar']))
 					echo "<br>Se adiciono exitosamente!";
 					if($respuesta1 == 'LA UPSA ES LA MEJOR UNIVERSIDAD, POR ESO TIENES QUE INSCRIBIRTE AQUÍ, PROMOUPSA 2020 LA MEJOR DEL MUNDO.')
 					{
-					  $nota = $nota + 30; // 70 si escribe la respuesta correcta
+					  $nota = $nota + 30; // 30 si escribe la respuesta correcta
 					//  $ObjEx1->setRespuesta1($respuesta1);
 					}else {
 					  //$ObjEx1->setRespuesta1($respuesta1);
 					}
-					if($respuesta2 == 'a')
-					{
-					  $nota = $nota + 10;
-					//  $ObjEx1->setRespuesta2($respuesta2);
-					}
-					else {
-					//  $ObjEx1->setRespuesta2($respuesta2);
-					}
-					if($respuesta3 == 'a')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta3($respuesta3);
-					}
-					else {
-				  //    $ObjEx1->setRespuesta3($respuesta3);
-					}
-					if($respuesta4 == 'a')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta4($respuesta4);
-					}else {
-				  //    $ObjEx1->setRespuesta4($respuesta4);
-					}
-					if($respuesta5 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta6 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					   if($_POST['cell-2']=='7'&&$_POST['cell-5']=='8'&&$_POST['cell-7']=='4'&&$_POST['cell-9']=='4'&&$_POST['cell-10']=='9'&&$_POST['cell-11']=='3'&&$_POST['cell-12']=='6'&&$_POST['cell-13']=='7'&&$_POST['cell-15']=='5'&&$_POST['cell-16']=='1'&&$_POST['cell-17']=='8'&&$_POST['cell-18']=='5'&&$_POST['cell-19']=='8'&&$_POST['cell-20']=='2'&&$_POST['cell-21']=='4'&&$_POST['cell-22']=='9'&&$_POST['cell-24']=='3'&&$_POST['cell-29']=='8'&&$_POST['cell-30']=='9'&&$_POST['cell-31']=='5'&&$_POST['cell-32']=='6'&&$_POST['cell-34']=='2'&&$_POST['cell-36']=='2'&&$_POST['cell-37']=='7'&&$_POST['cell-39']=='3'&&$_POST['cell-40']=='1'&&$_POST['cell-41']=='4'&&$_POST['cell-43']=='5'&&$_POST['cell-44']=='6'&&$_POST['cell-46']=='5'&&$_POST['cell-48']=='8'&&$_POST['cell-49']=='2'&&$_POST['cell-50']=='7'&&$_POST['cell-51']=='1'&&$_POST['cell-56']=='6'&&$_POST['cell-58']=='4'&&$_POST['cell-59']=='3'&&$_POST['cell-60']=='9'&&$_POST['cell-61']=='7'&&$_POST['cell-62']=='5'&&$_POST['cell-63']=='7'&&$_POST['cell-64']=='4'&&$_POST['cell-65']=='5'&&$_POST['cell-67']=='8'&&$_POST['cell-68']=='9'&&$_POST['cell-69']=='6'&&$_POST['cell-70']=='3'&&$_POST['cell-71']=='1'&&$_POST['cell-73']=='3'&&$_POST['cell-75']=='7'&&$_POST['cell-78']=='4')
+					
+					if($_POST['cell-2']=='7'&&$_POST['cell-5']=='8'&&$_POST['cell-7']=='4'&&$_POST['cell-9']=='4'&&$_POST['cell-10']=='9'&&$_POST['cell-11']=='3'&&$_POST['cell-12']=='6'&&$_POST['cell-13']=='7'&&$_POST['cell-15']=='5'&&$_POST['cell-16']=='1'&&$_POST['cell-17']=='8'&&$_POST['cell-18']=='5'&&$_POST['cell-19']=='8'&&$_POST['cell-20']=='2'&&$_POST['cell-21']=='4'&&$_POST['cell-22']=='9'&&$_POST['cell-24']=='3'&&$_POST['cell-29']=='8'&&$_POST['cell-30']=='9'&&$_POST['cell-31']=='5'&&$_POST['cell-32']=='6'&&$_POST['cell-34']=='2'&&$_POST['cell-36']=='2'&&$_POST['cell-37']=='7'&&$_POST['cell-39']=='3'&&$_POST['cell-40']=='1'&&$_POST['cell-41']=='4'&&$_POST['cell-43']=='5'&&$_POST['cell-44']=='6'&&$_POST['cell-46']=='5'&&$_POST['cell-48']=='8'&&$_POST['cell-49']=='2'&&$_POST['cell-50']=='7'&&$_POST['cell-51']=='1'&&$_POST['cell-56']=='6'&&$_POST['cell-58']=='4'&&$_POST['cell-59']=='3'&&$_POST['cell-60']=='9'&&$_POST['cell-61']=='7'&&$_POST['cell-62']=='5'&&$_POST['cell-63']=='7'&&$_POST['cell-64']=='4'&&$_POST['cell-65']=='5'&&$_POST['cell-67']=='8'&&$_POST['cell-68']=='9'&&$_POST['cell-69']=='6'&&$_POST['cell-70']=='3'&&$_POST['cell-71']=='1'&&$_POST['cell-73']=='3'&&$_POST['cell-75']=='7'&&$_POST['cell-78']=='4')
 					{
 					  $nota = $nota + 40;
 				  //    $ObjEx1->setRespuesta5($respuesta5);
 					}else {
 				//      $ObjEx1->setRespuesta5($respuesta5);
 					}
-					if($_POST['celda-2']=='R'&&$_POST['celda-4']=='R'&&$_POST['celda-11']=='R'&&$_POST['celda-13']=='R')
+					if($_POST['celda-3']=='R'&&$_POST['celda-6']=='R'&&$_POST['celda-16']=='R'&&$_POST['celda-19']=='R'&&$_POST['celda-29']=='R'&&$_POST['celda-32']=='R')
 					{
 					$nota = $nota + 30;
 					}else
-					if($_POST['celda-1']=='R'&&$_POST['celda-7']=='R'&&$_POST['celda-8']=='R'&&$_POST['celda-14']=='R')
+					if($_POST['celda-4']=='R'&&$_POST['celda-8']=='R'&&$_POST['celda-12']=='R'&&$_POST['celda-23']=='R'&&$_POST['celda-27']=='R'&&$_POST['celda-31']=='R')
 					{
 					$nota = $nota + 30;
-					}
-					if($respuesta8 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta9 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
-					if($respuesta10 == '2')
-					{
-					  $nota = $nota + 10;
-				  //    $ObjEx1->setRespuesta5($respuesta5);
-					}else {
-				//      $ObjEx1->setRespuesta5($respuesta5);
-					}
+					}else
+                    if($_POST['celda-1']=='R'&&$_POST['celda-9']=='R'&&$_POST['celda-17']=='R'&&$_POST['celda-18']=='R'&&$_POST['celda-26']=='R'&&$_POST['celda-34']=='R')
+                    {
+                    $nota = $nota + 30;
+                    }else
+                    if($_POST['celda-2']=='R'&&$_POST['celda-11']=='R'&&$_POST['celda-13']=='R'&&$_POST['celda-22']=='R'&&$_POST['celda-24']=='R'&&$_POST['celda-33']=='R')
+                    {
+                    $nota = $nota + 30;
+                    }
+					
        
 
 					$Obj->setExamen2($nota);

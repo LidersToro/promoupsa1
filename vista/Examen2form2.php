@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 ?>
 <!DOCTYPE html>
@@ -466,22 +466,20 @@ session_start();
 
     </style>
  <div class="container">
-<table style="margin-top:2px; margin-left:115px;" id="grid">
+<table style="margin-top:2px; margin-left:65px;" id="grid">
 
      <tr>
           <td><input id="cell0" name="celda-0" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell1" name="celda-1" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell2" name="celda-2" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell3" name="celda-3" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell4" name="celda-4" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell5" name="celda-5" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
          </tr>
 
     <tr>
-          <td><input id="cell4" name="celda-4" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
-          <td><input id="cell5" name="celda-5" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell6" name="celda-6" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell7" name="celda-7" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
-     </tr>
-          <tr>
           <td><input id="cell8" name="celda-8" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell9" name="celda-9" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell10" name="celda-10" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
@@ -492,6 +490,33 @@ session_start();
           <td><input id="cell13" name="celda-13" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell14" name="celda-14" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
           <td><input id="cell15" name="celda-15" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell16" name="celda-16" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell17" name="celda-17" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+
+     </tr>
+          <tr>
+          <td><input id="cell18" name="celda-18" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell19" name="celda-19" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell20" name="celda-20" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell21" name="celda-21" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell22" name="celda-22" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell23" name="celda-23" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+     </tr>
+              <tr>
+          <td><input id="cell24" name="celda-24" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell25" name="celda-25" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell26" name="celda-26" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell27" name="celda-27" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell28" name="celda-28" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell29" name="celda-29" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+     </tr>
+              <tr>
+          <td><input id="cell30" name="celda-30" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell31" name="celda-31" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell32" name="celda-32" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell33" name="celda-33" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell34" name="celda-34" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
+          <td><input id="cell35" name="celda-35" max-length="1" onkeyup="this.value = this.value.toUpperCase(); " placeholder="" pattern="[R]" type="text"></td>
      </tr>
 
       </table>

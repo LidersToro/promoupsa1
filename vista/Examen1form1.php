@@ -80,10 +80,21 @@ session_start();
 					c) Encontrar la potencia 
 					</label>
 					<br>
-					<b>Solo colocar el número, sin su unidad de medida.<br></b>
-	                a)<input type="text" name="a1" class="form-control">	
-					b)<input type="text" name="b1" class="form-control">	
-					c)<input type="text" name="c1" class="form-control">	
+					<b>Escoja una opcion para cada inciso.<br></b>
+	                a)<input type="radio" name="a1" checked="checked" value="30"/>Rt=30Ω
+						<input type="radio" name="a1" value="46.5"/>Rt=46.5Ω
+						<input type="radio" name="a1" value="37.5"/>Rt=37.5Ω
+						<br>
+			
+					b)<input type="radio" name="b1" checked="checked" value="6.6"/>6.6A
+						<input type="radio" name="b1" value="5.8"/>5.8A
+						<input type="radio" name="b1" value="4.3"/>4.3A
+						<br>
+					c)<input type="radio" name="c1" checked="checked" value="1276"/>1276W
+						<input type="radio" name="c1" value="1280.4"/>1280.4W
+						<input type="radio" name="c1" value="1272.6"/>1272.6W
+						<br>
+
 	                </section>
 	                
 					<!-- SECTION 2 -->
