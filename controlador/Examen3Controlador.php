@@ -10,11 +10,7 @@ $Obj = new Examen1Modelo();
 
 if(isset($_POST['btn_enviar']))
 {
-				 $nota = 0;
-					
-					
-					
-					
+				 $nota = 0;				
 					if($respuesta1 == 'a')
 					{
 					  $nota = $nota + 25;
