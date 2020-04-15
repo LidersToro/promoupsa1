@@ -18,7 +18,7 @@ $Obj = new Examen1Modelo();
 
 if(isset($_POST['btn_enviar']))
 {
-				 $nota = 0; //
+				 $nota = 0; 
 				
 					
 					if($_POST['a1'] == '37.5')
