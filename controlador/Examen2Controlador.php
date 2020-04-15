@@ -17,7 +17,7 @@ $Obj = new Examen1Modelo();
 if(isset($_POST['btn_enviar']))
 {
 				 $nota = 0;
-					echo "<br>Se adiciono exitosamente!";
+					
 					if($respuesta1 == 'LA UPSA ES LA MEJOR UNIVERSIDAD, POR ESO TIENES QUE INSCRIBIRTE AQUÍ, PROMOUPSA 2020 LA MEJOR DEL MUNDO.')
 					{
 					  $nota = $nota + 30; // 30 si escribe la respuesta correcta
