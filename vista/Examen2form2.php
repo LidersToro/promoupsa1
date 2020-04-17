@@ -385,7 +385,7 @@ session_start();
 	                <!-- SECTION 3 -->
 	                <h4></h4>
 	                <section>
-	        <h3 class="padre">Realizar el Juego de Reinas 4x4</h3>
+	        <h3 class="padre">Realizar el Juego de Reinas 6x6</h3>
 					<div class="padre">
 	                   <div style="width: 450px;">
                             	Introduzca con una <b>R</b> el lugar de la reina.
