@@ -1,6 +1,6 @@
 <?php
 session_start();
-$a="";
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -113,7 +113,8 @@ $a="";
 					<img src="/../promoupsa1/images/mal.jpeg"  onclick="cambiar1();" id="imagen2" >
 
 
-					<select name="resp1" id="resp1" class="form-control" Required>	
+					<select name="resp1" id="resp1" class="form-control" Required>
+					<option value="" selected disabled>Selecione uno</option>
 					<option value="a" class="option">A</option>
 					<option value="b" class="option">B</option>	
 					</select> 
@@ -128,8 +129,9 @@ $a="";
 					Sea y: # de manzanas de Hugo<br>
 							<br><br>
 					Solo colocar el número.<br>
-	                x)<input type="number" name="resp2" class="form-control" Required>	
-					y)<input type="number" name="resp3" class="form-control" Required>	
+	                x)<input type="radio" name="resp2" value="b"/>6 <input type="radio" name="resp2" value="b"/>10 <input type="radio" name="resp2" value="7"/>7
+					<br>
+					y)<input type="radio" name="resp3" value="b"/>8 <input type="radio" name="resp3" value="5"/>5 <input type="radio" name="resp3" value="b"/>4
 	                
 	                    
 	                </section>
@@ -139,13 +141,13 @@ $a="";
 	                <section>
 	                    <h3 class="padre"> Se deja caer un objeto desde la azotea de un edificio que tiene una altura de 12 m. ¿En qué tiempo toca el piso?</h3>
 					<div class="padre">
-					<img src="/../promoupsa1/images/civil3.png" ><br>
+					<img src="/../promoupsa1/images/civil3.png" height=200px><br>
 						En la ecuación<br>
-					<img src="/../promoupsa1/images/civil4.png" >
+					<img src="/../promoupsa1/images/civil4.png"height=60px >
 					</div>
 					<br><br>
-					Colocar el tiempo en segundos, usar solo dos decimales y utilizar el punto decimal.<br>
-	                <input type="text" name="resp4" class="form-control" Required>	
+					Solo colocar el número.<br>
+	                <input type="radio" name="resp4" value="b"/>1.56<input type="radio" name="resp4" value="b"/> 2.10<input type="radio" name="resp4" value="1.57"/>1.57
 					<br><br>
 	                
 						<div class="padre">

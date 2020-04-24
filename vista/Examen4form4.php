@@ -138,21 +138,13 @@ session_start();
 	                ¿ La carpintería sería capaz de cumplir con las especificaciones?  
 					</label>
 					<br><br>
-									<select name="resp5" class="form-control" required>
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">si</option>
-									<option value="b" class="option">no</option>
-									</select><br><br>
+					<input type="radio" name="resp5" value="a"/>Si<input type="radio" name="resp5" value="b"/> No	<br><br>
 				
 					  ¿Cuál parece ser la resistencia promedio de las piezas? 
 					</label>
 					<br><br>
-									<select name="resp6" class="form-control" required>
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">16 a 16.5 lbs por cm2</option>
-									<option value="b" class="option">19.5 a 20.0 lbs por cm2</option>
-									<option value="c" class="option">18 a 18.5 lbs por cm2</option>
-									</select>
+					<input type="radio" name="resp6" value="a"/>16 a 16.5 lbs por cm2<input type="radio" name="resp6" value="b"/> 19.5 a 20.0 lbs por cm2<br><input type="radio" name="resp6" value="c"/>18 a 18.5 lbs por cm2			
+				
 	                </section>
 
 	                <!-- SECTION 3 -->
@@ -165,20 +157,18 @@ session_start();
 								1.  Falta de Supervisión <br>
 								2.  Evaluación de proveedores<br>
 								3.  Falta de Enfoque al cliente<br>
-								4. Falta de procedimientos  <br>
-								5. Capacidad de entrega<br>
+								4.  Falta de procedimientos  <br>
+								5.  Capacidad de entrega<br>
+								6.  Falta de liderazgo <br>
 							</div>
 					<label>
 	                Selecione uno 
 					</label>
 					<br><br>
-									<select name="resp7" class="form-control" required>
-									<option value="" selected disabled>Seleciona uno opcion</option>
-									<option value="a" class="option">1, 2, 3</option>
-									<option value="b" class="option">1, 4, 6</option>
-									<option value="c" class="option">1, 3, 4</option>
-									<option value="d" class="option">3, 5, 6</option>
-									</select>
+									<input type="radio" name="resp7" value="a"/>1, 2, 3
+									<input type="radio" name="resp7" value="b"/>1, 4, 6
+									<input type="radio" name="resp7" value="c"/>1, 3, 4
+									<input type="radio" name="resp7" value="d"/>3, 5, 6
 						<div class="padre">
 						<p class="p p2">Si el boton no le da, fata llenar algun dato en el formulario. </p>
 						<button class="button button4" name="btn_enviar">Finalizar Cuestionario</button>
